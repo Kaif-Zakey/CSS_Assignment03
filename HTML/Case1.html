@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Description">
+    <meta name="keyword" content="Relative,absolute,CSS,HTML,positioning">
+    <meta name="author" content="KaifZaki">
+    <link rel="icon"  type="image/x-icon" href="../Assets/WebIcon.png">
+    <link rel="stylesheet" href="../CSS/normalizeCSS.css">
+
+    <title>Case : 01</title>
+
+    <style>
+        body{
+
+        }
+
+        body>section{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        body>section:first-child{
+            background-color: red;
+        }
+
+        body>section:nth-child(2){
+            background-color: green;
+            right: 0;
+
+        }
+        body>section:nth-child(3){
+            background-color: gold;
+            bottom: 0;
+        }
+
+        body>section:nth-child(4){
+            background-color: hotpink;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>div{
+            background-color: white;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>section>div>div{
+            background-color: red;
+            width: 5vw;
+            height: 5vw;
+            position: absolute;
+            top: 0;
+            bottom:0 ;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .corner{
+            background-color: white;
+            width: 15vw;
+            height: 15vw;
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        #corner1{
+            top: calc(-15vw/2);
+            left: calc(-15vw/2);
+
+        }
+
+        #corner2{
+            right: calc(-15vw/2);
+            top: calc(-15vw/2);
+        }
+
+        #corner3{
+            bottom:calc(-15vw/2) ;
+            left:calc(-15vw/2) ;
+        }
+
+        #corner4{
+            bottom: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+
+        #corner5{
+            right: 0;
+            left: 0;
+            top: calc(-15vw/2);
+            margin: auto;
+        }
+
+        #corner6{
+            bottom: calc(-15vw/2);
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+
+        #mid{
+            position: absolute;
+            width: 15vw;
+            height: 15vw;
+            background-color: white;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        #mid>div{
+            width: 10vw;
+            height: 10vw;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
+
+<div id="mid">
+    <div></div>
+</div>
+
+</body>
+</html>

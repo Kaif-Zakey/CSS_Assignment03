@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Description">
+    <meta name="keyword" content="Relative,absolute,CSS,HTML,positioning">
+    <meta name="author" content="KaifZaki">
+    <link rel="icon"  type="image/x-icon" href="../Assets/WebIcon.png">
+    <link rel="stylesheet" href="../CSS/normalizeCSS.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+
+    <title>Case : 2</title>
+
+
+    <style>
+
+        header{
+            background-color: white;
+            height: 100px;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        header>nav {
+            height: fit-content;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        header>img{
+            height:30px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        header>nav>ul {
+            list-style: none;
+        }
+
+        header>nav>ul>li {
+            display: inline;
+            margin: 0px 10px;
+        }
+
+        footer {
+            background: gray;
+            color: white;
+            position: relative;
+        }
+        footer>div {
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        main{
+            background-color: black;
+            position: relative;
+        }
+
+        main>section{
+            margin-left: 250px;
+            background-color: white;
+
+            font-family: "Moderustic", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        section>section{
+        position: relative;
+            top: 2px;
+            left: 3px;
+            margin: auto;
+        }
+        main>section>p{
+            position: relative;
+            left: 10px;
+        }
+
+        main>section>p:first-child {
+            margin-top: 0;
+        }
+
+        main>section>p:last-child {
+            margin-bottom: 0;
+        }
+
+        /*sider bar*/
+        aside {
+            background: #3b0f4d;
+            color: white;
+            width: 250px;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        aside>nav>ul {
+            list-style: none;
+            margin: 0;
+        }
+        aside>nav>ul>li{
+            padding: 8px;
+        }
+
+        main>section>section {
+
+            position: relative;
+            height: 300px;
+        }
+
+        main>section>section>div {
+            border: 1px solid lightgreen;
+            background: url("../Assets/gif/monkey.gif");
+
+            width: calc(100%/3);
+            height: 300px;
+            position: absolute;
+        }
+
+        main>section>section>div:nth-child(2) {
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        main>section>section>div:last-child {
+            right: 0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<header>
+    <img src="../Assets/Ijse_logo.png" alt="IJSE Logo">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contacts</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <aside>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contacts</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet distinctio ea earum est facere id laborum magnam nisi provident quam, quas reprehenderit rerum sed ut. Debitis minima non sunt!
+        </p>
+    </section>
+</main>
+
+<footer>
+    <div>Developed by IJSE</div>
+</footer>
+
+</body>
+</html>
